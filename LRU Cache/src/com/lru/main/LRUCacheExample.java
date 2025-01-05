@@ -2,6 +2,7 @@ package com.lru.main;
 
 import java.util.LinkedHashMap;
 import java.lang.*;
+import java.lang.ref.WeakReference;
 
 
 public class LRUCacheExample<String, Integer> extends LinkedHashMap<String, Integer>{
@@ -26,7 +27,6 @@ public class LRUCacheExample<String, Integer> extends LinkedHashMap<String, Inte
 	public static void main(java.lang.String[] args) {
 		
 		LRUCacheExample<java.lang.String, java.lang.Integer> lruCacheExample = new LRUCacheExample<>(3);
-		
 		lruCacheExample.put("RAM", 40);
 		lruCacheExample.put("John", 90);
 		lruCacheExample.put("RAM", 60);
